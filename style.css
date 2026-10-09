@@ -18,6 +18,7 @@ h1 {
     font-size: 36px;
 }
 
+/* Flexbox arranges the navigation links and allows wrapping. */
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -96,6 +97,7 @@ thead {
     max-width: 1100px;
 }
 
+/* Highlights the homepage introduction using a class selector. */
 .intro {
     border-left: 5px solid #17365d;
     background-color: #eef3f9;
@@ -120,3 +122,4 @@ figcaption {
     font-size: 16px;
     margin-bottom: 20px;
 }
+
