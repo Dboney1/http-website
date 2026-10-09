@@ -6,65 +6,85 @@
     <title>HTTP and Its Evolution</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>HTTP and Its Evolution</h1>
-        <p>How the Web communicates and how HTTP has changed over time.</p>
+<body class="home-page">
+    <header class="site-header">
+        <p class="site-name">HTTP and Its Evolution</p>
+        <p class="site-subtitle">A closer look at web communication</p>
     </header>
 
-<!-- Shared navigation connects the six website pages. -->
-<nav>
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="how-http-works.html">How HTTP Works</a>
-    <a href="http-evolution.html">HTTP’s Evolution</a>
-    <a href="concepts.html">Key Concepts</a>
-    <a href="references.html">References</a>
-    <a href="about.html">About</a>
-</nav>
+    <!-- Shared navigation connects the six website pages. -->
+    <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="how-http-works.html">How HTTP Works</a>
+        <a href="http-evolution.html">HTTP’s Evolution</a>
+        <a href="concepts.html">Key Concepts</a>
+        <a href="references.html">References</a>
+        <a href="about.html">About</a>
+    </nav>
 
-<main id="home-content">
-    <section class="intro">
-        <h2>Welcome</h2>
+    <main id="home-content">
+        <section class="welcome-banner">
+            <p class="eyebrow">EXPLORE THE WEB</p>
+            <h1>Every webpage begins with a conversation.</h1>
+            <p class="welcome-description">
+                Discover how HTTP connects browsers and servers,
+                and how its evolution has shaped the way we use the Web.
+            </p>
+            <a class="explore-button" href="how-http-works.html">
+                Explore HTTP
+            </a>
+        </section>
+
+        <div class="home-columns">
+            <section class="overview">
+                <p class="eyebrow">THE BIG PICTURE</p>
+                <h2>What is HTTP?</h2>
+                <p>
+                    HTTP stands for Hypertext Transfer Protocol.
+                    It defines how web browsers request information
+                    and how web servers respond.
+                </p>
+                <p>
+                    From loading a photograph to retrieving application
+                    data, HTTP supports many everyday interactions
+                    on the Web. This project explores those exchanges
+                    and the changes introduced across HTTP versions.
+                </p>
+            </section>
+
+            <section class="key-terms">
+                <h2>Terms to Know</h2>
+                <ul>
+                    <li>HTTP</li>
+                    <li>Client and server</li>
+                    <li>Request and response</li>
+                    <li>HTTPS</li>
+                    <li>Caching</li>
+                    <li>QUIC</li>
+                </ul>
+                <a href="concepts.html">Read the definitions</a>
+            </section>
+        </div>
+
+        <section class="contents">
+            <p class="eyebrow">KEEP EXPLORING</p>
+            <h2>Inside This Website</h2>
+            <ol>
+                <li><a href="how-http-works.html">How HTTP Works</a></li>
+                <li><a href="http-evolution.html">HTTP’s Evolution</a></li>
+                <li><a href="concepts.html">Key Concepts</a></li>
+                <li><a href="references.html">References and Resources</a></li>
+                <li><a href="about.html">About the Author and Project</a></li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
         <p>
-            HTTP stands for Hypertext Transfer Protocol. It defines how
-            web browsers request information and how web servers respond.
-            This website explores how HTTP works and how it has evolved
-            to support faster, more efficient communication.
+            This website is a class project for
+            <a href="https://ksuweb.github.io/IT3203/">IT 3203</a>
+            at Kennesaw State University.
         </p>
-    </section>
-
-    <section>
-        <h2>Key Terms</h2>
-        <ul>
-            <li>HTTP</li>
-            <li>Client and server</li>
-            <li>Request and response</li>
-            <li>HTTPS</li>
-            <li>Caching</li>
-            <li>QUIC</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Table of Contents</h2>
-        <ol>
-            <li><a href="how-http-works.html">How HTTP Works</a></li>
-            <li><a href="http-evolution.html">HTTP’s Evolution</a></li>
-            <li><a href="concepts.html">Key Concepts</a></li>
-            <li><a href="references.html">References and Resources</a></li>
-            <li><a href="about.html">About the Author and Project</a></li>
-        </ol>
-    </section>
-</main>
-
-<footer>
-    <p>
-        This website is a class project for
-        <a href="https://ksuweb.github.io/IT3203/">IT 3203</a>
-        at Kennesaw State University.
-    </p>
-</footer>
-
+    </footer>
 </body>
 </html>

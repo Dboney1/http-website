@@ -6,7 +6,7 @@
     <title>About the Author and Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="about-page">
     <header>
     <h1>About the Author and Project</h1>
     <p>Meet the author and learn about this website.</p>
@@ -23,80 +23,124 @@
 </nav>
 
 <main>
-    <section>
-        <h2>About Me</h2>
+    <section class="about-intro">
+        <p class="eyebrow">MEET THE AUTHOR</p>
+        <h2>Hello, I’m Deja Boney.</h2>
         <p>
-            My name is Deja Boney. I am a student at Kennesaw State
-            University pursuing a Bachelor of Business Administration
-            in Information Systems with a minor in Information Technology.
+            I am studying Information Systems at Kennesaw State
+            University with a minor in Information Technology.
             My interests include data analytics, artificial intelligence,
             and using technology to support communities.
         </p>
     </section>
 
-    <section>
-        <h2>Education and Skills</h2>
-        <ul>
-            <li>Information Systems major at Kennesaw State University</li>
-            <li>Minor in Information Technology</li>
-            <li>Experience with SQL and data analysis</li>
-            <li>Developing skills in Python, HTML, and CSS</li>
-            <li>Interest in technology, leadership, and community service</li>
-        </ul>
-    </section>
+    <div class="about-layout">
+        <aside class="profile-sidebar">
+            <h2>At a Glance</h2>
 
-    <section>
-    <h2>Professional Experience</h2>
+            <h3>Education</h3>
+            <p>
+                Kennesaw State University
+                <br>
+                BBA in Information Systems
+                <br>
+                Minor in Information Technology
+            </p>
 
-     <h3>City of Atlanta Department of Atlanta Information Management — Chief Administrative Intern/Software Developer Intern</h3>
-    <p>
-        As a Chief Administrative Intern and Software Developer Intern with the City of Atlanta’s
-        Department of Atlanta Information Management, I support
-        technology initiatives and administrative coordination.
-        I also developed GRACE, an AI executive assistant desktop application
-        designed to support executvies with daily briefings, scheduling, email summaries, and task
-        management.
-    </p>
-    <p>
-        Working on GRACE has helped me strengthen my skills in
-        application development, workflow automation, and communicating
-        with technical teams. This experience reflects my interest
-        in using technology to improve operations and support public service.
-    </p>
+            <h3>Skills</h3>
+            <ul>
+                <li>SQL and data analysis</li>
+                <li>Workflow automation</li>
+                <li>Project coordination</li>
+                <li>Developing Python skills</li>
+                <li>HTML and CSS</li>
+            </ul>
 
-    <h3>City of Atlanta Department of Aviation — Data Analyst Intern</h3>
-    <p>
-        As a Data Analyst Intern, I helped clean and analyze data,
-        identify inconsistencies, and improve reporting and workflows.
-        I used SQL to support data preparation and contributed to
-        operational risk analysis and contingency planning.
-    </p>
+            <h3>Career Interests</h3>
+            <p>
+                Data analytics, data science, and technology leadership.
+            </p>
+        </aside>
 
-    <h3>Circles Cobb — Data Operations Specialist</h3>
-    <p>
-        Through the KSU Service Fellowship Program and my service with Circles Cobb, I supported
-        data operations, resource coordination, and workflow improvements.
-        My work helped organize information and connect participants
-        with community resources. This experience strengthened my
-        interest in using data and technology to support underserved
-        communities.
+        <div class="about-details">
+            <section>
+                <h2>Professional Experience</h2>
 
-    </section>
+                <article class="experience-entry">
+                    <h3>Chief Administrative Intern</h3>
+                    <p class="organization">
+                        City of Atlanta — Atlanta Information Management
+                    </p>
+                    <p>
+                        I support technology initiatives and administrative
+                        coordination. I am also developing GRACE, an AI
+                        executive assistant designed to support Chief
+                        Information Officer Jason Sankey with daily
+                        briefings, scheduling, email summaries, and
+                        task management.
+                    </p>
+                    <p>
+                        This experience has strengthened my skills in
+                        application development, workflow automation,
+                        and communication with technical teams.
+                    </p>
+                </article>
 
-    <section>
-        <h2>About This Project</h2>
-        <p>
-            This website was created for IT 3203 at Kennesaw State
-            University. It builds on my research presentation,
-            HTTP and Its Evolution, by presenting the information
-            across connected webpages.
-        </p>
-        <p>
-            The project explores how HTTP works, how its versions have
-            changed, and the key concepts behind web communication.
-            It also demonstrates HTML page structure and CSS styling.
-        </p>
-    </section>
+                <article class="experience-entry">
+                    <h3>Data Analyst Intern</h3>
+                    <p class="organization">
+                        City of Atlanta — Department of Aviation
+                    </p>
+                    <p>
+                        I helped clean and analyze data, identify
+                        inconsistencies, and improve reporting and
+                        workflows. I used SQL for data preparation
+                        and contributed to operational risk analysis
+                        and contingency planning.
+                    </p>
+                </article>
+
+                <article class="experience-entry">
+                    <h3>Data Operations Specialist</h3>
+                    <p class="organization">
+                        Circles Cobb — AmeriCorps Service Fellowship
+                    </p>
+                    <p>
+                        I supported data operations, resource coordination,
+                        and workflow improvements. My work helped organize
+                        information and connect participants with community
+                        resources.
+                    </p>
+                </article>
+            </section>
+
+            <section>
+                <h2>Why Technology Matters to Me</h2>
+                <p>
+                    Growing up in an underserved community in Atlanta
+                    shaped my interest in giving back. I want to use
+                    data and technology to improve access to resources
+                    and help solve problems that affect communities.
+                </p>
+            </section>
+
+            <section>
+                <h2>About This Project</h2>
+                <p>
+                    This website was created for IT 3203 at Kennesaw
+                    State University. It expands on my research
+                    presentation, HTTP and Its Evolution, by explaining
+                    how HTTP works and how its versions have changed.
+                </p>
+                <p>
+                    The project gives me an opportunity to practice
+                    organizing webpages with HTML and styling them
+                    with CSS.
+                </p>
+                <a href="http-evolution.html">Explore HTTP’s evolution</a>
+            </section>
+        </div>
+    </div>
 </main>
 
 <footer>

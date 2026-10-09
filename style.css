@@ -1,110 +1,184 @@
 body {
     margin: 0;
-    background-color: #f4f6f8;
-    color: #243247;
+    background-color: #faf4f3;
+    color: #493638;
     font-family: "Times New Roman", serif;
-    line-height: 1.6;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 header {
-    padding: 40px 24px;
-    background-color: #17365d;
-    color: white;
+    padding: 64px 24px;
+    background-color: #f0d8d5;
+    color: #493638;
     text-align: center;
+    border-bottom: 4px solid #b77b75;
 }
 
 h1 {
-    margin: 0 0 12px;
-    font-size: 36px;
+    max-width: 1000px;
+    margin: 0 auto 16px;
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: normal;
 }
 
-/* Flexbox arranges the navigation links and allows wrapping. */
+header p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 16px;
-    background-color: #e2e8f0;
-    border-bottom: 1px solid #cbd5e1;
+    gap: 8px 16px;
+    padding: 18px 24px;
+    background-color: #fffaf9;
+    border-bottom: 1px solid #e3c9c5;
 }
 
 nav a {
-    color: #17365d;
+    padding: 8px 14px;
+    color: #704744;
     font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #f3e1de;
+    color: #493638;
     text-decoration: none;
 }
 
-a:hover {
-    color: #805000;
+a {
+    color: #704744;
     text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: #493638;
+}
+
+a:focus-visible {
+    outline: 2px solid #704744;
+    outline-offset: 4px;
 }
 
 main {
     max-width: 1000px;
-    margin: 32px auto;
+    margin: 40px auto;
     padding: 0 24px;
-}
-
-section {
-    margin-bottom: 24px;
-    padding: 24px;
-    background-color: white;
-    border: 1px solid #d5dde5;
-    border-radius: 8px;
-}
-
-h2 {
-    margin-top: 0;
-    color: #17365d;
-}
-
-footer {
-    padding: 20px;
-    background-color: #e2e8f0;
-    text-align: center;
-}
-
-footer a {
-    color: #17365d;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 16px;
-}
-
-caption {
-    margin-bottom: 12px;
-    font-weight: bold;
-    text-align: left;
-}
-
-th,
-td {
-    padding: 12px;
-    border: 1px solid #cbd5e1;
-    text-align: left;
-}
-
-thead {
-    background-color: #17365d;
-    color: white;
 }
 
 #home-content {
     max-width: 1100px;
 }
 
-/* Highlights the homepage introduction using a class selector. */
+section {
+    margin-bottom: 28px;
+    padding: 32px;
+    background-color: #fffdfc;
+    border: 1px solid #e5ceca;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(73, 54, 56, 0.04);
+}
+
 .intro {
-    border-left: 5px solid #17365d;
-    background-color: #eef3f9;
+    background-color: #f7e7e4;
+    border-left: 5px solid #b77b75;
+}
+
+h2 {
+    margin: 0 0 18px;
+    color: #704744;
+    font-size: 28px;
+    line-height: 1.3;
+    font-weight: normal;
+}
+
+h3 {
+    margin: 28px 0 10px;
+    color: #704744;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+p {
+    margin: 0 0 18px;
+}
+
+section > :last-child {
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 26px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+strong {
+    color: #593c3e;
+}
+
+code {
+    padding: 3px 7px;
+    background-color: #f7e7e4;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+    font-size: 0.9em;
+    overflow-wrap: anywhere;
+}
+
+table {
+    width: 100%;
+    margin-top: 18px;
+    border-collapse: collapse;
+}
+
+caption {
+    margin-bottom: 14px;
+    color: #704744;
+    font-weight: bold;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 16px;
+    border: 1px solid #dec2bd;
+    text-align: left;
+    vertical-align: top;
+}
+
+thead {
+    background-color: #efd6d3;
+    color: #493638;
+}
+
+tbody th {
+    color: #704744;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #faf0ee;
 }
 
 figure {
-    margin: 0;
+    margin: 24px 0;
 }
 
 .history-image {
@@ -112,14 +186,274 @@ figure {
     width: 100%;
     max-width: 600px;
     height: auto;
-    margin: 16px auto;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 1px solid #dec2bd;
+    border-radius: 10px;
 }
 
 figcaption {
+    max-width: 600px;
+    margin: 14px auto 0;
+    color: #704744;
+    font-size: 16px;
+    text-align: center;
+}
+
+footer {
+    padding: 28px 24px;
+    background-color: #efd6d3;
+    border-top: 1px solid #dec2bd;
     text-align: center;
     font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    nav {
+        gap: 6px;
+        padding: 12px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+    }
+
+    main {
+        margin: 24px auto;
+        padding: 0 16px;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        overflow-wrap: anywhere;
+    }
+
+    table {
+        font-size: 16px;
+    }
+}
+
+.home-page .site-header {
+    padding: 28px 24px;
+    background-color: #fffdfc;
+    border-bottom: none;
+}
+
+.site-name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header .site-subtitle {
+    margin-top: 4px;
+    font-size: 16px;
+}
+
+nav a[aria-current="page"] {
+    background-color: #f3e1de;
+}
+
+.home-page section {
+    box-shadow: none;
+}
+
+.welcome-banner {
+    padding: 64px 48px;
+    background-color: #f0d8d5;
+    border: none;
+    border-radius: 0;
+}
+
+.eyebrow {
+    margin-bottom: 16px;
+    color: #704744;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.welcome-banner h1 {
+    max-width: 650px;
+    margin: 0 0 24px;
+    font-size: 52px;
+}
+
+.welcome-description {
+    max-width: 580px;
+    margin-bottom: 28px;
+    font-size: 21px;
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #704744;
+    color: white;
+    border: 1px solid #704744;
+    text-decoration: none;
+}
+
+.explore-button:hover {
+    background-color: #493638;
+    color: white;
+    text-decoration: none;
+}
+
+/* Grid places the overview and key terms side by side. */
+.home-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+    margin: 40px 0;
+}
+
+.home-columns section {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.overview {
+    padding: 16px 0;
+    background-color: transparent;
+}
+
+.key-terms {
+    padding: 28px;
+    background-color: #f7e7e4;
+}
+
+.key-terms ul {
     margin-bottom: 20px;
 }
 
+.contents {
+    padding: 32px 0;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #dec2bd;
+    border-radius: 0;
+}
+
+.contents li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e5ceca;
+}
+
+@media (max-width: 700px) {
+    .home-columns {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .welcome-banner {
+        padding: 36px 24px;
+    }
+
+    .welcome-banner h1 {
+        font-size: 36px;
+    }
+}
+
+.about-page .about-intro {
+    padding: 40px;
+    background-color: #f7e7e4;
+    border: none;
+    border-left: 5px solid #b77b75;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.about-intro h2 {
+    font-size: 36px;
+}
+
+.about-intro p {
+    max-width: 750px;
+}
+
+/* Grid separates education and skills from professional experience. */
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.profile-sidebar {
+    align-self: start;
+    padding: 28px;
+    background-color: #f0d8d5;
+    border-top: 4px solid #b77b75;
+}
+
+.profile-sidebar h3 {
+    margin-top: 24px;
+}
+
+.profile-sidebar p {
+    font-size: 17px;
+}
+
+.about-page .about-details section {
+    padding: 0 0 28px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #dec2bd;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.experience-entry {
+    margin-top: 24px;
+    padding-left: 20px;
+    border-left: 2px solid #b77b75;
+}
+
+.experience-entry h3 {
+    margin: 0 0 6px;
+}
+
+.organization {
+    margin-bottom: 12px;
+    color: #704744;
+    font-size: 16px;
+    font-style: italic;
+}
+
+@media (max-width: 700px) {
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .about-page .about-intro {
+        padding: 28px;
+    }
+
+    .about-intro h2 {
+        font-size: 30px;
+    }
+}
