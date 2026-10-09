@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP’s Evolution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>HTTP’s Evolution</h1>
+    <p>From simple document requests to modern web communication.</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="how-http-works.html">How HTTP Works</a>
+    <a href="http-evolution.html">HTTP’s Evolution</a>
+    <a href="concepts.html">Key Concepts</a>
+    <a href="references.html">References</a>
+    <a href="about.html">About</a>
+</nav>
+
+<main>
+    <section>
+    <h2>The Origins of the Web</h2>
+    <figure>
+        <img src="images/first-web-server.png.jpg"
+             alt="The NeXT computer used as the first web server at CERN."
+             class="history-image">
+        <figcaption>
+            The first web server at CERN ran on a NeXT computer.
+        </figcaption>
+    </figure>
+    <p>
+        Tim Berners-Lee proposed the World Wide Web at CERN in 1989.
+        By the end of 1990, the first browser and web server were working.
+        HTTP helped make communication between them possible.
+    </p>
+    <p>
+        Source:
+        <a href="https://home.cern/science/computing/birth-web/short-history-web">
+            CERN: A Short History of the Web
+        </a>.
+    </p>
+</section>
+
+    <section>
+        <h2>Why HTTP Changed</h2>
+        <p>
+            Early websites mainly contained simple HTML documents.
+            As websites added images, videos, and interactive features,
+            HTTP evolved to handle more requests efficiently.
+            Each major version introduced improvements while keeping
+            the basic request-and-response model.
+        </p>
+    </section>
+
+    <section>
+        <h2>Comparing HTTP Versions</h2>
+        <table>
+            <caption>Major developments in HTTP</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Version</th>
+                    <th scope="col">Year</th>
+                    <th scope="col">Main Improvement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">HTTP/0.9</th>
+                    <td>1991</td>
+                    <td>Simple GET requests and HTML responses.</td>
+                </tr>
+                <tr>
+                    <th scope="row">HTTP/1.0</th>
+                    <td>1996</td>
+                    <td>Added headers, status codes, and support for different content types.</td>
+                </tr>
+                <tr>
+                    <th scope="row">HTTP/1.1</th>
+                    <td>1997</td>
+                    <td>Made persistent connections the default and improved caching.</td>
+                </tr>
+                <tr>
+                    <th scope="row">HTTP/2</th>
+                    <td>2015</td>
+                    <td>Introduced binary framing, multiplexing, and header compression.</td>
+                </tr>
+                <tr>
+                    <th scope="row">HTTP/3</th>
+                    <td>2022</td>
+                    <td>Used QUIC to reduce delays caused by packet loss across independent streams.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Understanding Multiplexing</h2>
+        <p>
+            Multiplexing allows multiple requests and responses to share
+            one connection at the same time. HTTP/2 uses this approach
+            so several resources can make progress together.
+            However, a lost TCP packet can still delay all streams
+            sharing that connection.
+        </p>
+    </section>
+
+    <section>
+        <h2>How HTTP/3 Uses QUIC</h2>
+        <p>
+            HTTP/3 uses QUIC, a transport protocol that operates over UDP.
+            QUIC handles streams independently, so missing data in one
+            stream does not require unrelated streams to wait for it.
+            QUIC also integrates TLS 1.3 security into its connection setup.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>
+        This website is a class project for
+        <a href="https://ksuweb.github.io/IT3203/">IT 3203</a>
+        at Kennesaw State University.
+    </p>
+</footer>
+
+</body>
+</html>
