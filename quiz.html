@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Knowledge Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+    <p class="site-name">HTTP and Its Evolution</p>
+    <p class="site-subtitle">A closer look at web communication</p>
+</header>
+
+<!-- Shared navigation connects the six website pages. -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="how-http-works.html">How HTTP Works</a>
+    <a href="http-evolution.html">HTTP’s Evolution</a>
+    <a href="concepts.html">Key Concepts</a>
+    <a href="references.html">References</a>
+    <a href="about.html">About</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="quiz.html">Quiz</a>
+</nav>
+
+<main>
+    <h1 class="page-title">HTTP Knowledge Quiz</h1>
+    <section>
+    <h2>Before You Begin</h2>
+    <p>
+        Answer 10 questions about HTTP and its evolution.
+        You will have 10 minutes after selecting Start Quiz.
+    </p>
+    <p>
+        Each question is worth 1 point. A score of 7 out of 10
+        or higher is a passing score. For multiple-selection
+        questions, select all correct answers and no incorrect answers.
+    </p>
+    <button type="button" id="start-quiz">Start Quiz</button>
+</section>
+<form id="quiz-form" hidden>
+    <p>Time remaining: <span id="timer">10:00</span></p>
+
+    <fieldset>
+        <legend>1. What does HTTP stand for?</legend>
+        <label for="q1">Your answer:</label>
+        <input type="text" id="q1" name="q1">
+    </fieldset>
+
+    <fieldset>
+    <legend>2. Which HTTP status code means “Not Found”?</legend>
+    <label for="q2">Enter the three-digit code:</label>
+    <input type="text" id="q2" name="q2" maxlength="3">
+</fieldset>
+
+<fieldset>
+    <legend>3. Which HTTP method retrieves a resource?</legend>
+
+    <label>
+        <input type="radio" name="q3" value="GET">
+        GET
+    </label>
+
+    <label>
+        <input type="radio" name="q3" value="POST">
+        POST
+    </label>
+
+    <label>
+        <input type="radio" name="q3" value="DELETE">
+        DELETE
+    </label>
+</fieldset>
+
+<fieldset>
+    <legend>4. Which HTTP version uses QUIC?</legend>
+
+    <label>
+        <input type="radio" name="q4" value="HTTP/1.1">
+        HTTP/1.1
+    </label>
+
+    <label>
+        <input type="radio" name="q4" value="HTTP/2">
+        HTTP/2
+    </label>
+
+    <label>
+        <input type="radio" name="q4" value="HTTP/3">
+        HTTP/3
+    </label>
+</fieldset>
+
+<fieldset>
+    <legend>5. What is the main purpose of caching?</legend>
+
+    <label>
+        <input type="radio" name="q5" value="reuse">
+        Store resources so they can be reused.
+    </label>
+
+    <label>
+        <input type="radio" name="q5" value="encrypt">
+        Encrypt all network traffic.
+    </label>
+
+    <label>
+        <input type="radio" name="q5" value="delete">
+        Delete resources after every request.
+    </label>
+</fieldset>
+
+<fieldset>
+    <legend>6. Which protections does HTTPS provide? Select all that apply.</legend>
+
+    <label>
+        <input type="checkbox" name="q6" value="encryption">
+        Encryption of data in transit.
+    </label>
+
+    <label>
+        <input type="checkbox" name="q6" value="integrity">
+        Detection of changes to data in transit.
+    </label>
+
+    <label>
+        <input type="checkbox" name="q6" value="authentication">
+        Authentication of the server using certificates.
+    </label>
+
+    <label>
+        <input type="checkbox" name="q6" value="trustworthy">
+        A guarantee that all website content is trustworthy.
+    </label>
+</fieldset>
+
+<fieldset>
+    <legend>7. What does an HTTP client do?</legend>
+
+    <label>
+        <input type="radio" name="q7" value="request">
+        Sends requests for resources to a server.
+    </label>
+
+    <label>
+        <input type="radio" name="q7" value="route">
+        Routes all Internet traffic between networks.
+    </label>
+
+    <label>
+        <input type="radio" name="q7" value="host">
+        Always stores and hosts the requested website.
+    </label>
+</fieldset>
+
+<fieldset>
+    <legend>8. Which status code indicates a successful request?</legend>
+
+    <label>
+        <input type="radio" name="q8" value="200">
+        200 OK
+    </label>
+
+    <label>
+        <input type="radio" name="q8" value="404">
+        404 Not Found
+    </label>
+
+    <label>
+        <input type="radio" name="q8" value="500">
+        500 Internal Server Error
+    </label>
+</fieldset>
+
+<fieldset>
+    <legend>9. What improvement did HTTP/2 introduce?</legend>
+
+    <label>
+        <input type="radio" name="q9" value="multiplexing">
+        Multiple streams sharing one connection through multiplexing.
+    </label>
+
+    <label>
+        <input type="radio" name="q9" value="html-only">
+        Support for HTML documents only.
+    </label>
+
+    <label>
+        <input type="radio" name="q9" value="no-headers">
+        Removal of all request and response headers.
+    </label>
+</fieldset>
+
+<fieldset>
+    <legend>10. What does it mean that HTTP is stateless?</legend>
+
+    <label>
+        <input type="radio" name="q10" value="independent">
+        Each request can be understood independently of earlier requests.
+    </label>
+
+    <label>
+        <input type="radio" name="q10" value="no-users">
+        Websites cannot remember signed-in users.
+    </label>
+
+    <label>
+        <input type="radio" name="q10" value="no-response">
+        Servers do not send responses.
+    </label>
+</fieldset>
+
+<div class="quiz-actions">
+    <button type="submit" id="submit-quiz">Submit Quiz</button>
+    <button type="button" id="reset-quiz">Retake / Reset Quiz</button>
+</div>
+</form>
+<section id="quiz-results" aria-live="polite" hidden>
+    <h2>Your Results</h2>
+    <div id="results-summary"></div>
+    <div id="question-results"></div>
+</section>
+</main>
+
+<footer>
+    <p>
+        This website is a class project for
+        <a href="https://ksuweb.github.io/IT3203/">IT 3203</a>
+        at Kennesaw State University.
+    </p>
+</footer>
+<script src="quiz.js" defer></script>
+</body>
+</html>
